@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bolos-da-jo.vercel.app/sitemap.xml

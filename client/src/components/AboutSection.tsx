@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import bakerImage from "@assets/generated_images/Brazilian_woman_baker_39c4379b.png";
+import OptimizedImage from "./OptimizedImage";
 
 export default function AboutSection() {
   return (
@@ -21,11 +22,10 @@ export default function AboutSection() {
             <CardContent className="p-0">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="aspect-square md:aspect-auto">
-                  <img 
+                  <OptimizedImage
                     src={bakerImage}
                     alt="Jô, confeiteira dos Bolos da Jô"
-                    className="w-full h-full object-cover"
-                    data-testid="img-baker"
+                    aspectRatio="aspect-square md:aspect-auto"
                   />
                 </div>
                 

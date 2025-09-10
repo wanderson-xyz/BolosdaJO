@@ -2,15 +2,8 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-
-interface ProductCardProps {
-  id: string;
-  title: string;
-  description: string;
-  price: string;
-  image: string;
-  category: string;
-}
+import OptimizedImage from "./OptimizedImage";
+import { companyInfo } from "@/data/products";
 
 interface ProductCardProps {
   id: string;
@@ -31,12 +24,10 @@ export default function ProductCard({
   category,
   whatsappMessage 
 }: ProductCardProps) {
-  const whatsappNumber = "5511999999999"; // Todo: replace with real number
-  
   const handleWhatsAppClick = () => {
     const message = whatsappMessage || `Olá! Gostaria de pedir o ${title} (${price}). Podem me ajudar?`;
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
+    window.open(`https://wa.me/${companyInfo.phone}?text=${encodedMessage}`, "_blank");
   };
 
   return (
@@ -48,12 +39,12 @@ export default function ProductCard({
       className="flex-shrink-0 w-72"
     >
       <Card className="h-full hover-elevate overflow-hidden">
-        <div className="aspect-square overflow-hidden">
-          <img 
+        <div className="overflow-hidden">
+          <OptimizedImage
             src={image}
             alt={title}
-            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-            data-testid={`img-product-${id}`}
+            className="transition-transform duration-300 hover:scale-105"
+            aspectRatio="aspect-square"
           />
         </div>
         

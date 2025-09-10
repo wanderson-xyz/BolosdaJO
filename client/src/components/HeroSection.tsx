@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import heroImage from "@assets/generated_images/Elegant_pink_bow_cake_ba0afee2.png";
+import OptimizedImage from "./OptimizedImage";
 
 import { companyInfo } from "@/data/products";
 
@@ -16,10 +17,12 @@ export default function HeroSection() {
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 to-orange-50">
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <OptimizedImage
           src={heroImage}
           alt="Bolo elegante da Jô"
-          className="w-full h-full object-cover opacity-20"
+          className="opacity-20"
+          aspectRatio=""
+          priority={true}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-pink-100/80 to-orange-100/80" />
       </div>

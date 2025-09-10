@@ -6,6 +6,7 @@ import AboutSection from "@/components/AboutSection";
 import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import SEOSchema from "@/components/SEOSchema";
 import { 
   kitsFesta, 
   kitsChantininho, 
@@ -17,6 +18,7 @@ import {
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <SEOSchema />
       <Header />
       
       <main>

@@ -35,12 +35,18 @@ export default function LocationSection() {
             {/* Map */}
             <Card className="overflow-hidden">
               <CardContent className="p-0">
-                <div className="aspect-video bg-muted flex items-center justify-center">
-                  <div className="text-center text-muted-foreground">
-                    <MapPin className="h-12 w-12 mx-auto mb-4" />
-                    <p>Mapa do Google será integrado aqui</p>
-                    <p className="text-sm mt-2">Todo: Adicionar Google Maps embed</p>
-                  </div>
+                <div className="aspect-video">
+                  <iframe
+                    src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dO6T8Q1YJZLPd8&q=${encodeURIComponent(companyInfo.address)}`}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Localização Bolos da Jô"
+                    className="w-full h-full"
+                  />
                 </div>
               </CardContent>
             </Card>

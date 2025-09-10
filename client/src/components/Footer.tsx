@@ -1,5 +1,6 @@
 import { Heart, Instagram, Phone, MapPin } from "lucide-react";
 import logoImage from "@assets/logo bolo da jo_1757542450876.jpg";
+import { companyInfo } from "@/data/products";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -24,12 +25,11 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Há mais de 10 anos criando momentos doces e especiais. 
-              Bolos caseiros, kits de festa e salgados feitos com muito carinho.
+              {companyInfo.description}
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com" 
+                href={`https://instagram.com/${companyInfo.instagram.replace('@', '')}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -46,11 +46,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>(11) 99999-9999</span>
+                <span>({companyInfo.phone.slice(2, 4)}) {companyInfo.phone.slice(4, 9)}-{companyInfo.phone.slice(9)}</span>
               </div>
               <div className="flex items-start space-x-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>Rua das Flores, 123<br />Centro, São Paulo - SP</span>
+                <span>{companyInfo.address}</span>
               </div>
             </div>
           </div>
@@ -59,9 +59,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Horário</h4>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>Segunda a Sexta<br />8h às 18h</p>
-              <p>Sábado<br />8h às 15h</p>
-              <p>Domingo<br />Fechado</p>
+              <p>Segunda a Sexta<br />{companyInfo.hours.weekdays}</p>
+              <p>Sábado<br />{companyInfo.hours.saturday}</p>
+              <p>Domingo<br />{companyInfo.hours.sunday}</p>
             </div>
           </div>
         </div>

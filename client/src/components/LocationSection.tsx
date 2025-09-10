@@ -3,17 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Navigation, Phone, Clock } from "lucide-react";
 
+import { companyInfo } from "@/data/products";
+
 export default function LocationSection() {
-  const address = "Rua das Flores, 123 - Centro, São Paulo - SP"; // Todo: replace with real address
-  const phone = "(11) 99999-9999"; // Todo: replace with real phone
-  
   const handleWazeClick = () => {
-    const encodedAddress = encodeURIComponent(address);
+    const encodedAddress = encodeURIComponent(companyInfo.address);
     window.open(`https://waze.com/ul?q=${encodedAddress}`, "_blank");
   };
   
   const handleMapsClick = () => {
-    const encodedAddress = encodeURIComponent(address);
+    const encodedAddress = encodeURIComponent(companyInfo.address);
     window.open(`https://maps.google.com/?q=${encodedAddress}`, "_blank");
   };
 
@@ -56,7 +55,7 @@ export default function LocationSection() {
                       <div>
                         <h3 className="font-semibold mb-1">Endereço</h3>
                         <p className="text-muted-foreground" data-testid="text-address">
-                          {address}
+                          {companyInfo.address}
                         </p>
                       </div>
                     </div>
@@ -64,9 +63,9 @@ export default function LocationSection() {
                     <div className="flex items-start space-x-3">
                       <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                       <div>
-                        <h3 className="font-semibold mb-1">Telefone</h3>
+                        <h3 className="font-semibold mb-1">WhatsApp</h3>
                         <p className="text-muted-foreground" data-testid="text-phone">
-                          {phone}
+                          ({companyInfo.phone.slice(2, 4)}) {companyInfo.phone.slice(4, 9)}-{companyInfo.phone.slice(9)}
                         </p>
                       </div>
                     </div>
@@ -76,9 +75,9 @@ export default function LocationSection() {
                       <div>
                         <h3 className="font-semibold mb-1">Horário de Funcionamento</h3>
                         <div className="text-muted-foreground space-y-1">
-                          <p>Segunda a Sexta: 8h às 18h</p>
-                          <p>Sábado: 8h às 15h</p>
-                          <p>Domingo: Fechado</p>
+                          <p>Segunda a Sexta: {companyInfo.hours.weekdays}</p>
+                          <p>Sábado: {companyInfo.hours.saturday}</p>
+                          <p>Domingo: {companyInfo.hours.sunday}</p>
                         </div>
                       </div>
                     </div>

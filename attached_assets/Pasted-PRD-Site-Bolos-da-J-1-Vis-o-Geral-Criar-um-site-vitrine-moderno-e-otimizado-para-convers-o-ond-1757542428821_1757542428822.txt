@@ -1,0 +1,210 @@
+PRD – Site Bolos da Jô
+1. Visão Geral
+
+Criar um site-vitrine moderno e otimizado para conversão, onde o objetivo principal é fechar vendas via WhatsApp. O site deve apresentar de forma atraente os kits de festa, tortas, brownies e salgados, permitindo que o cliente visualize rapidamente as opções, clique em um produto e seja redirecionado para o WhatsApp com uma mensagem pré-preenchida.
+
+2. Objetivos
+
+Exibir os produtos principais da Bolos da Jô de forma clara e apetitosa.
+
+Facilitar pedidos via WhatsApp com o menor número de cliques possível.
+
+Transmitir profissionalismo, confiança e identidade da marca.
+
+Ser a base para upgrades futuros: sistema de pedidos online e pagamentos antecipados.
+
+Garantir boa performance, SEO avançado e responsividade mobile-first.
+
+3. Público-Alvo
+
+Moradores da cidade/região que buscam bolos, kits de festa e salgados.
+
+Usuários de celular (80%+) → prioridade para experiência mobile.
+
+Clientes que chegam pelo Instagram, Google Maps e boca a boca.
+
+4. Estrutura do Site (MVP)
+4.1 Página Inicial
+
+Banner hero com imagem de bolo → frase de impacto:
+“Bolos caseiros e kits de festa completos em [Cidade]”.
+
+Botão CTA fixo: “Peça pelo WhatsApp”.
+
+Destaque inicial: Kits de Festa (rolagem horizontal).
+
+Seções secundárias: Tortas • Brownies • Salgados (também horizontais).
+
+4.2 Galeria de Produtos
+
+Cada categoria organizada em carrosséis horizontais (scroll lateral no mobile).
+
+Cartões de produto: foto + título + descrição + preço + botão “Pedir pelo WhatsApp”.
+
+4.3 Sobre a Jô
+
+Foto da confeiteira + texto autêntico contando a história da marca.
+
+4.4 Localização
+
+Google Maps embed.
+
+Botões “Abrir no Waze” e “Abrir no Maps”.
+
+4.5 Contato
+
+Botão flutuante do WhatsApp presente em todas as páginas.
+
+5. Catálogo de Produtos (Versão Inicial)
+🎉 Kits de Festa
+
+Kit 1: 1 torta laço (10 pessoas), 1 cento salgado, 1 refri 2L → R$125.
+
+Kit 2: 1 torta laço (20 pessoas), 2 centos salgados, 2 refri 2L → R$210.
+
+Kit 3: 1 torta laço (20 pessoas), 2 centos salgados, 2 refri 2L, 50 docinhos → R$260.
+
+Kit 4: 1 torta laço (30 pessoas), 3 centos salgados, 3 refri 2L, 50 docinhos → R$350.
+
+Kit 5: 1 torta laço (30 pessoas), 3 centos salgados, 3 refri 2L, 100 docinhos → R$405.
+
+🎂 Kits Chantininho
+
+Kit 1: Chantininho (15 pessoas), 1 cento salgados, 50 docinhos → R$275.
+
+Kit 2: Chantininho (25 pessoas), 2 centos salgados, 100 docinhos → R$399.
+
+Kit 3: Chantininho (35 pessoas), 3 centos salgados, 100 docinhos → R$489.
+
+🍰 Tortas e Bolos
+
+Bolos tradicionais (amanteigado, formigueiro, mesclado) → R$20.
+
+Bolo mole tradicional → R$26.
+
+🍫 Doces e Salgados
+
+Brownie → R$5.
+
+Salgados (cento) → Preço conforme kits.
+
+6. Requisitos Funcionais
+
+Catálogo com scroll horizontal em todas as categorias.
+
+Botão de cada produto redireciona para WhatsApp com mensagem pré-preenchida.
+
+Site responsivo (mobile-first).
+
+Integração com Google Maps (iframe).
+
+Ícone fixo do WhatsApp em todas as telas.
+
+7. Requisitos Não Funcionais
+
+Performance: carregamento rápido (Lighthouse score > 90).
+
+SEO: otimização completa seguindo boas práticas (vide seção 10).
+
+Escalabilidade: estrutura preparada para upgrades (checkout online).
+
+Deploy: hospedagem no Vercel, com configuração de serverless.
+
+8. Tecnologias
+
+Frontend: React + Vite + TailwindCSS.
+
+UI/UX: animações com Framer Motion (hover, fade-in, transitions suaves).
+
+Imagens: WebP otimizadas, lazy loading.
+
+Deploy: Vercel (com vercel.json).
+
+SEO: meta tags, sitemap, robots.txt, Open Graph, Schema Markup.
+
+9. UX/UI
+
+Layout delicado (paleta: tons pastéis – rosa, bege, branco, marrom claro).
+
+Tipografia arredondada e amigável.
+
+Imagens grandes e apetitosas → dar “fome” no visitante.
+
+Animações em hover nos botões (efeito scale-up e cor).
+
+Cards de produto com sombra suave + bordas arredondadas.
+
+10. SEO – Estratégia Completa
+
+On-page:
+
+Meta tags (title ≤ 60 caracteres, description ≤ 160).
+
+Estrutura H1/H2/H3 clara.
+
+URLs amigáveis.
+
+Arquivos obrigatórios:
+
+robots.txt permitindo indexação.
+
+sitemap.xml na raiz.
+
+Performance:
+
+Imagens WebP.
+
+Minificação CSS/JS.
+
+Cache configurado.
+
+Off-page:
+
+Integração com Google Meu Negócio.
+
+Incentivar backlinks (blogs locais, parceiros de festas).
+
+Social SEO:
+
+Open Graph + Twitter Card.
+
+Compartilhamento fácil no Instagram/WhatsApp.
+
+11. Roadmap
+Fase 1 (MVP – Presente para a Jô)
+
+Deploy no Vercel com domínio temporário.
+
+Páginas iniciais + catálogo horizontal + botão WhatsApp.
+
+SEO básico configurado.
+
+Fase 2 (Upgrade Pago)
+
+Checkout online com Pix/cartão.
+
+Cálculo de taxa de entrega por bairro/CEP.
+
+Promoções “Prontos para Hoje”.
+
+Blog para SEO avançado.
+
+12. Conteúdo Necessário (Cliente)
+
+Fotos reais dos bolos/kits.
+
+Logo (se tiver).
+
+Texto de apresentação (“Sobre a Jô”).
+
+Endereço e WhatsApp oficial.
+
+13. Sucesso do Projeto
+
+Site online e funcionando em mobile-first.
+
+Cliente conseguindo gerar vendas via WhatsApp.
+
+SEO indexado no Google em até 30 dias.
+
+Feedback positivo da Jô + vídeo de depoimento no Instagram

@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import heroImage from "@assets/generated_images/Elegant_pink_bow_cake_ba0afee2.png";
 
+import { companyInfo } from "@/data/products";
+
 export default function HeroSection() {
-  const whatsappNumber = "5511999999999"; // Todo: replace with real number
-  const whatsappMessage = "Olá! Vi o site e gostaria de fazer um pedido. Podem me ajudar?";
-  
   const handleWhatsAppClick = () => {
-    const encodedMessage = encodeURIComponent(whatsappMessage);
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
+    const message = "Olá! Vi o site e gostaria de fazer um pedido. Podem me ajudar?";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/${companyInfo.phone}?text=${encodedMessage}`, "_blank");
   };
 
   return (

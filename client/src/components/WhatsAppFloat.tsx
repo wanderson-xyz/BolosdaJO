@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import { companyInfo } from "@/data/products";
+
 export default function WhatsAppFloat() {
-  const whatsappNumber = "5511999999999"; // Todo: replace with real number
-  const whatsappMessage = "Olá! Gostaria de fazer um pedido dos Bolos da Jô.";
-  
   const handleWhatsAppClick = () => {
-    const encodedMessage = encodeURIComponent(whatsappMessage);
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
+    const message = "Olá! Gostaria de fazer um pedido dos Bolos da Jô.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/${companyInfo.phone}?text=${encodedMessage}`, "_blank");
   };
 
   return (

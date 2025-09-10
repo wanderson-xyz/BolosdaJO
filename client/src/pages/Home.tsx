@@ -10,7 +10,7 @@ import {
   kitsFesta, 
   kitsChantininho, 
   tortasBolos, 
-  docesExtras, 
+  brownies, 
   salgados 
 } from "@/data/products";
 
@@ -49,7 +49,7 @@ export default function Home() {
           <ProductCarousel 
             title="Brownies"
             emoji="🍫"
-            products={docesExtras}
+            products={brownies}
           />
           
           <ProductCarousel 

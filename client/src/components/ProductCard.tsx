@@ -12,18 +12,29 @@ interface ProductCardProps {
   category: string;
 }
 
+interface ProductCardProps {
+  id: string;
+  title: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  whatsappMessage?: string;
+}
+
 export default function ProductCard({ 
   id, 
   title, 
   description, 
   price, 
   image, 
-  category 
+  category,
+  whatsappMessage 
 }: ProductCardProps) {
   const whatsappNumber = "5511999999999"; // Todo: replace with real number
   
   const handleWhatsAppClick = () => {
-    const message = `Olá! Gostaria de pedir o ${title} (${price}). Podem me ajudar?`;
+    const message = whatsappMessage || `Olá! Gostaria de pedir o ${title} (${price}). Podem me ajudar?`;
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
   };

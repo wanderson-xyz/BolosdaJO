@@ -81,6 +81,18 @@ export default function Footer() {
             © {currentYear} Bolos da Jô. Feito com {" "}
             <Heart className="inline h-4 w-4 text-red-500" /> para você.
           </p>
+          <p className="text-xs text-muted-foreground/60 mt-2">
+            Site criado por {" "}
+            <a 
+              href="https://wanderson-almeida.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-muted-foreground transition-colors underline decoration-dotted"
+              data-testid="link-developer"
+            >
+              Wanderson Almeida
+            </a>
+          </p>
         </div>
       </div>
     </footer>

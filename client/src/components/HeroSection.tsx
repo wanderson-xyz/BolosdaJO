@@ -10,7 +10,7 @@ export default function HeroSection() {
   const handleWhatsAppClick = () => {
     const message = "Olá! Vi o site e gostaria de fazer um pedido. Podem me ajudar?";
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/${companyInfo.phone}?text=${encodedMessage}`, "_blank");
+    window.open(`https://wa.me/${companyInfo.phone}?text=${encodedMessage}`, "_blank", "noopener,noreferrer");
   };
 
   return (

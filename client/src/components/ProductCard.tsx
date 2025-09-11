@@ -27,7 +27,7 @@ export default function ProductCard({
   const handleWhatsAppClick = () => {
     const message = whatsappMessage || `Olá! Gostaria de pedir o ${title} (${price}). Podem me ajudar?`;
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/${companyInfo.phone}?text=${encodedMessage}`, "_blank");
+    window.open(`https://wa.me/${companyInfo.phone}?text=${encodedMessage}`, "_blank", "noopener,noreferrer");
   };
 
   return (

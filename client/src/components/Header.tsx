@@ -8,7 +8,7 @@ export default function Header() {
   const handleWhatsAppClick = () => {
     const message = "Olá! Gostaria de fazer um pedido dos Bolos da Jô.";
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/${companyInfo.phone}?text=${encodedMessage}`, "_blank");
+    window.open(`https://wa.me/${companyInfo.phone}?text=${encodedMessage}`, "_blank", "noopener,noreferrer");
   };
 
   return (

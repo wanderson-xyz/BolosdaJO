@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ProductCarousel from "@/components/ProductCarousel";
 import AboutSection from "@/components/AboutSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -11,8 +12,7 @@ import {
   kitsFesta, 
   kitsChantininho, 
   tortasBolos, 
-  brownies, 
-  salgados 
+  docesExtras
 } from "@/data/products";
 
 export default function Home() {
@@ -49,19 +49,14 @@ export default function Home() {
           />
           
           <ProductCarousel 
-            title="Brownies"
+            title="Doces e Extras"
             emoji="🍫"
-            products={brownies}
-          />
-          
-          <ProductCarousel 
-            title="Salgados"
-            emoji="🥟"
-            products={salgados}
+            products={docesExtras}
           />
         </motion.div>
         
         <AboutSection />
+        <TestimonialsSection />
         <LocationSection />
       </main>
       

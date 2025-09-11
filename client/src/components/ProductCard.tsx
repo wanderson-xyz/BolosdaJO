@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import OptimizedImage from "./OptimizedImage";
 import { companyInfo } from "@/data/products";
 
@@ -54,9 +54,13 @@ export default function ProductCard({
               <h3 className="text-lg font-semibold text-foreground" data-testid={`text-title-${id}`}>
                 {title}
               </h3>
-              <p className="text-sm text-muted-foreground mt-1" data-testid={`text-description-${id}`}>
-                {description}
-              </p>
+              <div className="text-sm text-muted-foreground mt-1" data-testid={`text-description-${id}`}>
+                {description.split('\n').map((line, index) => (
+                  <div key={index} className="flex items-center gap-1">
+                    {line}
+                  </div>
+                ))}
+              </div>
             </div>
             
             <div className="flex items-center justify-between">
@@ -68,7 +72,7 @@ export default function ProductCard({
                 className="bg-green-600 hover:bg-green-700 text-white"
                 data-testid={`button-whatsapp-${id}`}
               >
-                <MessageCircle className="mr-2 h-4 w-4" />
+                <FaWhatsapp className="mr-2 h-4 w-4" />
                 Pedir
               </Button>
             </div>

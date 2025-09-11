@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 
 import { companyInfo } from "@/data/products";
@@ -29,7 +29,7 @@ export default function WhatsAppFloat() {
         className="h-14 w-14 rounded-full bg-green-600 hover:bg-green-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
         data-testid="button-whatsapp-float"
       >
-        <MessageCircle className="h-6 w-6" />
+        <FaWhatsapp className="h-6 w-6" />
       </Button>
       
       {/* Pulse animation */}

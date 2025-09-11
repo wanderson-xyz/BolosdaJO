@@ -20,7 +20,7 @@ export const kitsFesta: Product[] = [
   {
     id: "kit-festa-1",
     title: "Kit 1",
-    description: "1 torta laço (10 pessoas), 1 cento salgado, 1 refri 2L",
+    description: "✅ 1 Torta Laço (serve até 10 pessoas)\n✅ 1 Cento de Salgados (100 unidades)\n✅ 1 Refrigerante 2L",
     price: "R$ 125",
     image: cakeImage,
     category: "Kits de Festa",
@@ -29,7 +29,7 @@ export const kitsFesta: Product[] = [
   {
     id: "kit-festa-2", 
     title: "Kit 2",
-    description: "1 torta laço (20 pessoas), 2 centos salgados, 2 refri 2L",
+    description: "✅ 1 Torta Laço (serve até 20 pessoas)\n✅ 2 Centos de Salgados (200 unidades)\n✅ 2 Refrigerantes 2L",
     price: "R$ 210",
     image: cakeImage,
     category: "Kits de Festa",
@@ -38,7 +38,7 @@ export const kitsFesta: Product[] = [
   {
     id: "kit-festa-3",
     title: "Kit 3",
-    description: "1 torta laço (20 pessoas), 2 centos salgados, 2 refri 2L, 50 docinhos",
+    description: "✅ 1 Torta Laço (serve até 20 pessoas)\n✅ 2 Centos de Salgados (200 unidades)\n✅ 2 Refrigerantes 2L\n✅ 50 Docinhos",
     price: "R$ 260", 
     image: cakeImage,
     category: "Kits de Festa",
@@ -47,7 +47,7 @@ export const kitsFesta: Product[] = [
   {
     id: "kit-festa-4",
     title: "Kit 4",
-    description: "1 torta laço (30 pessoas), 3 centos salgados, 3 refri 2L, 50 docinhos",
+    description: "✅ 1 Torta Laço (serve até 30 pessoas)\n✅ 3 Centos de Salgados (300 unidades)\n✅ 3 Refrigerantes 2L\n✅ 50 Docinhos",
     price: "R$ 350",
     image: cakeImage,
     category: "Kits de Festa",
@@ -56,7 +56,7 @@ export const kitsFesta: Product[] = [
   {
     id: "kit-festa-5",
     title: "Kit 5", 
-    description: "1 torta laço (30 pessoas), 3 centos salgados, 3 refri 2L, 100 docinhos",
+    description: "✅ 1 Torta Laço (serve até 30 pessoas)\n✅ 3 Centos de Salgados (300 unidades)\n✅ 3 Refrigerantes 2L\n✅ 100 Docinhos",
     price: "R$ 405",
     image: cakeImage,
     category: "Kits de Festa",
@@ -69,7 +69,7 @@ export const kitsChantininho: Product[] = [
   {
     id: "kit-chantininho-1",
     title: "Kit Chantininho 1",
-    description: "Chantininho (15 pessoas), 1 cento salgados, 50 docinhos",
+    description: "✅ 1 Bolo Chantininho (serve até 15 pessoas)\n✅ 1 Cento de Salgados (100 unidades)\n✅ 50 Docinhos",
     price: "R$ 275",
     image: chantillyImage,
     category: "Kits Chantininho",
@@ -78,7 +78,7 @@ export const kitsChantininho: Product[] = [
   {
     id: "kit-chantininho-2", 
     title: "Kit Chantininho 2",
-    description: "Chantininho (25 pessoas), 2 centos salgados, 100 docinhos", 
+    description: "✅ 1 Bolo Chantininho (serve até 25 pessoas)\n✅ 2 Centos de Salgados (200 unidades)\n✅ 100 Docinhos", 
     price: "R$ 399",
     image: chantillyImage,
     category: "Kits Chantininho",
@@ -87,7 +87,7 @@ export const kitsChantininho: Product[] = [
   {
     id: "kit-chantininho-3",
     title: "Kit Chantininho 3",
-    description: "Chantininho (35 pessoas), 3 centos salgados, 100 docinhos",
+    description: "✅ 1 Bolo Chantininho (serve até 35 pessoas)\n✅ 3 Centos de Salgados (300 unidades)\n✅ 100 Docinhos",
     price: "R$ 489",
     image: chantillyImage,
     category: "Kits Chantininho",
@@ -135,28 +135,24 @@ export const tortasBolos: Product[] = [
   }
 ];
 
-// 🍫 Brownies - Preços conforme PRD
-export const brownies: Product[] = [
+// 🍫 Doces e Extras - Preços conforme PRD
+export const docesExtras: Product[] = [
   {
     id: "brownie",
     title: "Brownie",
     description: "Brownie artesanal de chocolate, rico e cremoso",
     price: "R$ 5",
     image: brownieImage,
-    category: "Brownies",
+    category: "Doces e Extras",
     whatsappMessage: "Olá! Quero pedir brownies (R$ 5 cada). Quantos vocês têm disponíveis hoje?"
-  }
-];
-
-// 🥟 Salgados - Preços conforme PRD
-export const salgados: Product[] = [
+  },
   {
     id: "salgados-cento",
     title: "Salgados (1 cento)",
     description: "Coxinha, risole, pastel e outros salgados fresquinhos",
     price: "Conforme kits",
     image: salgadosImage,
-    category: "Salgados",
+    category: "Doces e Extras",
     whatsappMessage: "Olá! Gostaria de saber o preço dos salgados avulsos (1 cento). Quais tipos vocês têm disponíveis?"
   }
 ];
@@ -165,12 +161,14 @@ export const salgados: Product[] = [
 export const companyInfo = {
   name: "Bolos da Jô",
   phone: "5511999999999", // Todo: replace with real number
-  address: "Rua das Flores, 123 - Centro, São Paulo - SP", // Todo: replace with real address
+  address: "Bolos E Tortas Da JÔ - Fortaleza, CE",
+  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.949344555651!2d-38.50872901037598!3d-3.8210109925744287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74fc3d2e3732b%3A0x8e01797019e056b0!2sBolos%20E%20Tortas%20Da%20J%C3%94!5e0!3m2!1spt-BR!2sbr!4v1757552434951!5m2!1spt-BR!2sbr",
   hours: {
-    weekdays: "8h às 18h",
-    saturday: "8h às 15h", 
+    weekdays: "9h às 20h",
+    saturday: "9h às 20h", 
     sunday: "Fechado"
   },
-  instagram: "@bolosdajo", // Todo: replace with real instagram
+  instagram: "https://www.instagram.com/bolosdaajo/",
+  facebook: "https://www.facebook.com/bolosdaajo/",
   description: "Bolos caseiros, kits de festa, tortas, brownies e salgados artesanais há mais de 10 anos."
 };

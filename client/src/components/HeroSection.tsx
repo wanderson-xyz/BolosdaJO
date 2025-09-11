@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import heroImage from "@assets/generated_images/Elegant_pink_bow_cake_ba0afee2.png";
 import OptimizedImage from "./OptimizedImage";
 
@@ -52,8 +52,8 @@ export default function HeroSection() {
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg"
                 data-testid="button-whatsapp-hero"
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Peça pelo WhatsApp
+                <FaWhatsapp className="mr-2 h-5 w-5" />
+                Faça seu pedido
               </Button>
               
               <div className="text-center sm:text-left">

@@ -45,6 +45,8 @@ export default function ProductCard({
             alt={title}
             className="transition-transform duration-300 hover:scale-105"
             aspectRatio="aspect-square"
+            quality={80}
+            sizes="(max-width: 768px) 100vw, 300px"
           />
         </div>
         

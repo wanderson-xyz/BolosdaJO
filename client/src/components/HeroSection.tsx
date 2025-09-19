@@ -23,6 +23,8 @@ export default function HeroSection() {
           className="opacity-20"
           aspectRatio=""
           priority={true}
+          quality={60}
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-pink-100/80 to-orange-100/80" />
       </div>

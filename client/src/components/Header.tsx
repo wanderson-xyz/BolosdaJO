@@ -50,16 +50,14 @@ export default function Header() {
             >
               <FaFacebook className="h-5 w-5" />
             </a>
+            <button
+              onClick={handleWhatsAppClick}
+              className="text-muted-foreground hover:text-green-600 transition-colors"
+              data-testid="button-whatsapp-header"
+            >
+              <FaWhatsapp className="h-5 w-5" />
+            </button>
           </div>
-          
-          <Button 
-            onClick={handleWhatsAppClick}
-            className="bg-green-600 hover:bg-green-700 text-white"
-            data-testid="button-whatsapp-header"
-          >
-            <FaWhatsapp className="mr-2 h-4 w-4" />
-            Faça seu pedido
-          </Button>
         </div>
       </div>
     </header>
